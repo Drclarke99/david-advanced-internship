@@ -4,8 +4,12 @@ import {BiCrown} from 'react-icons/bi';
 import {RiLeafLine} from 'react-icons/ri';
 import '@/../styles/globals.css'
 import '@/../styles/style.css'
+import { useDispatch } from 'react-redux';
+import { openModal } from './features/modalSlice';
 
 export default function Home() {
+  const dispatch = useDispatch();
+
   return (
   <div>
     <nav className="nav">
